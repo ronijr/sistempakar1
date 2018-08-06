@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">SistemPakar</string>
+    <string name="app_name">Sistem Pakar</string>
+    <string name="desk1">Skizofrenia paranoid merupkan jenis skizofrenia yang paling umum di masyaraka. Skizofrenia sendiri merupakan penyakit gangguan otak yang menyebabkan penderita mengalami kelainan dalam berpikir, serta kelinan dalam merasakan atau memprepsepsikan lingkungan sekitar</string>
+    <string name="solusi1">Pasien umumnya diberikan obat obatan atispikotik untuk meredakan gejala skizofrenia seperti delusi dan halusinasi. Dokter akan memantau efekrivitas obat-obatan antipsikotik beserta dosisinya dalam meredakan gejala skizofrenia pada pasien</string>
+    <string name="desk2">Skizofrenia Katatonik merupakan salah satu jenis skizofrenia yang dapat ditandai dengan adanya penurunan aktivitas yang cukup dramatis hingga akhirnya nanti benar-benar berhenti</string>
+    <string name="solusi2">Terapi obat, Terapi kejut dan psychosurgery, Terapi psikodinamika, Terapi personal</string>
+    <string name="desk3">Skizofrenia Hebefrenik atau lebih dikenal dengan skizofrenia tidak teratur adalah jenis kelinan jiwa yang kompleks dan kronis.</string>
+    <string name="solusi3">Mengkomsumsi obat Antipsikotik, Terapi Electrocinvulsive</string>
+    <string name="desk4">Skizofrenia Residul adalah tipe yang paling ringan dari lima jenis skizofrenia lainya.</string>
+    <string name="solusi4">Mengkomsumsi Antipsikotik, Mengkomsumsi obat antideprsan, Melakukan Pesikoterapi</string>
+    <string name="desk5">Skizofrenia simplek adalah gangguan yang bisa terjadi pada anak muda.</string>
+    <string name="solusi5">Mengkomsumsi obat antipsikotik, Mengkomsumsi obat antidepresan, Melakukan Psikoterapi</string>
 </resources>
