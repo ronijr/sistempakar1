@@ -65,15 +65,12 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.g021) CheckBox g21;
     @BindView(R.id.g022) CheckBox g22;
     @BindView(R.id.g023) CheckBox g23;
-    @BindView(R.id.lakilaki) RadioButton laki;
-    @BindView(R.id.perempuan) RadioButton perempuan;
-    @BindView(R.id.nama) EditText nama;
-    @BindView(R.id.umur) EditText umur;
     Database database;
     Diagnosa modeldiagnosa;
     String penyakit1,penyakit2,penyakit3,penyakit4,penyakit5 = "";
     String persen1,persen2,persen3,persen4,persen5 ="";
     String code1,code2,code3,code4,code5="";
+    Intent intents;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         database= new Database(this);
         modeldiagnosa=new Diagnosa();
+        intents = getIntent();
         inisialisasiView();
     }
 
@@ -162,8 +160,6 @@ public class MainActivity extends AppCompatActivity {
                         && !g17.isChecked() && !g18.isChecked() && !g19.isChecked() &&
                         !g20.isChecked() && !g21.isChecked() && !g22.isChecked() && !g23.isChecked()){
                     Toast.makeText(getApplicationContext(),"Pilih gejala",Toast.LENGTH_SHORT).show();
-                } else if(TextUtils.isEmpty(nama.getText().toString().trim()) || TextUtils.isEmpty(umur.getText().toString().trim())){
-                    Toast.makeText(getApplicationContext(),"Isi dengan lengkap data diri anda",Toast.LENGTH_SHORT).show();
                 } else{
                     caculationDiagnosa();
                 }
@@ -370,15 +366,9 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("code5",code5);
         }
 
-        intent.putExtra("nama",nama.getText().toString().trim());
-        intent.putExtra("umur",umur.getText().toString().trim());
-        if(laki.isChecked()){
-            intent.putExtra("jk","Laki-laki");
-        } else if(perempuan.isChecked()){
-            intent.putExtra("jk","Perempuan");
-        } else{
-            intent.putExtra("jk","Tidak diketahui");
-        }
+        intent.putExtra("nama",intents.getStringExtra("nama"));
+        intent.putExtra("umur",intents.getStringExtra("umur"));
+        intent.putExtra("jk",intents.getStringExtra("jk"));
         startActivity(intent);
 
     }
