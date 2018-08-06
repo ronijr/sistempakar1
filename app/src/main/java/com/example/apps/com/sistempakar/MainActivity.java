@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +16,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -62,7 +65,10 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.g021) CheckBox g21;
     @BindView(R.id.g022) CheckBox g22;
     @BindView(R.id.g023) CheckBox g23;
-
+    @BindView(R.id.lakilaki) RadioButton laki;
+    @BindView(R.id.perempuan) RadioButton perempuan;
+    @BindView(R.id.nama) EditText nama;
+    @BindView(R.id.umur) EditText umur;
     Database database;
     Diagnosa modeldiagnosa;
     String penyakit1,penyakit2,penyakit3,penyakit4,penyakit5 = "";
@@ -156,7 +162,9 @@ public class MainActivity extends AppCompatActivity {
                         && !g17.isChecked() && !g18.isChecked() && !g19.isChecked() &&
                         !g20.isChecked() && !g21.isChecked() && !g22.isChecked() && !g23.isChecked()){
                     Toast.makeText(getApplicationContext(),"Pilih gejala",Toast.LENGTH_SHORT).show();
-                }else{
+                } else if(TextUtils.isEmpty(nama.getText().toString().trim()) || TextUtils.isEmpty(umur.getText().toString().trim())){
+                    Toast.makeText(getApplicationContext(),"Isi dengan lengkap data diri anda",Toast.LENGTH_SHORT).show();
+                } else{
                     caculationDiagnosa();
                 }
             }
@@ -362,6 +370,15 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("code5",code5);
         }
 
+        intent.putExtra("nama",nama.getText().toString().trim());
+        intent.putExtra("umur",umur.getText().toString().trim());
+        if(laki.isChecked()){
+            intent.putExtra("jk","Laki-laki");
+        } else if(perempuan.isChecked()){
+            intent.putExtra("jk","Perempuan");
+        } else{
+            intent.putExtra("jk","Tidak diketahui");
+        }
         startActivity(intent);
 
     }
