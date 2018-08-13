@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HasilDiagnosaActivity"
+        <activity
+            android:name=".HasilDiagnosaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SplashActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
