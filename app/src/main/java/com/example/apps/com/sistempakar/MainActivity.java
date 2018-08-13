@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -41,7 +42,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.submit) Button submit;
+    @BindView(R.id.submit) ImageButton submit;
     @BindView(R.id.g01) CheckBox g01;
     @BindView(R.id.g02) CheckBox g02;
     @BindView(R.id.g03) CheckBox g03;
@@ -371,6 +372,34 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("jk",intents.getStringExtra("jk"));
         startActivity(intent);
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        g01.setChecked(false);
+        g02.setChecked(false);
+        g03.setChecked(false);
+        g04.setChecked(false);
+        g05.setChecked(false);
+        g06.setChecked(false);
+        g07.setChecked(false);
+        g08.setChecked(false);
+        g09.setChecked(false);
+        g10.setChecked(false);
+        g11.setChecked(false);
+        g12.setChecked(false);
+        g13.setChecked(false);
+        g14.setChecked(false);
+        g15.setChecked(false);
+        g16.setChecked(false);
+        g17.setChecked(false);
+        g18.setChecked(false);
+        g19.setChecked(false);
+        g20.setChecked(false);
+        g21.setChecked(false);
+        g22.setChecked(false);
+        g23.setChecked(false);
     }
 
 }

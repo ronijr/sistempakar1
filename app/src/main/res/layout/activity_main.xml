@@ -10,7 +10,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+        <include android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar"/>
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -19,15 +22,27 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="match_parent">
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:text="Pilih Gejala"
-                    android:layout_margin="10dp"
-                    android:textSize="18sp"
-                    android:layout_marginStart="5dp"
-                    android:textColor="#000"
-                    android:textStyle="bold"
-                    android:layout_height="wrap_content" />
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_pilih_gejala"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Pilih Gejala"
+                        android:layout_margin="10dp"
+                        android:textSize="18sp"
+                        android:layout_marginStart="5dp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
                 <CheckBox
                     android:layout_width="match_parent"
                     android:id="@+id/g01"
@@ -248,14 +263,17 @@
 
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:text="Submit"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
         android:id="@+id/submit"
+        android:src="@drawable/ic_action_icon_gejala"
         android:background="@color/colorPrimaryDark"
         android:textColor="#fff"
         android:textSize="16sp"
-        android:layout_gravity="bottom"/>
+        android:layout_gravity="bottom|end"/>
 
 </android.support.design.widget.CoordinatorLayout>
