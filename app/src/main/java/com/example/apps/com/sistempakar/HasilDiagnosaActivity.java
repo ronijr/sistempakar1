@@ -44,6 +44,10 @@ public class HasilDiagnosaActivity extends AppCompatActivity {
     @BindView(R.id.layout4) LinearLayout layout4;
     @BindView(R.id.layout5) LinearLayout layout5;
 
+    @BindView(R.id.nama) TextView nama;
+    @BindView(R.id.jk) TextView jk;
+    @BindView(R.id.umur) TextView umur;
+
     Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +61,10 @@ public class HasilDiagnosaActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     private void inisialisasiView(){
+        nama.setText(intent.getStringExtra("nama"));
+        jk.setText(intent.getStringExtra("jk"));
+        umur.setText(intent.getStringExtra("umur")+" Tahun");
+
         if(intent.getStringExtra("code1") != null){
             layout1.setVisibility(View.VISIBLE);
             persen1.setText(intent.getStringExtra("persen1")+"%");

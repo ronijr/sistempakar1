@@ -7,114 +7,126 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.apps.com.sistempakar.MainActivity">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
-
                 android:layout_height="match_parent">
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g01"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Test"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g02"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Test"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g03"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g04"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Test"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g05"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Test"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g06"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g07"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Test"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g08"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Test"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g09"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Test"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g010"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Test"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g011"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Test"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Pilih Gejala"
+                    android:layout_margin="10dp"
+                    android:textSize="18sp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g01"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Test"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g02"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Test"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g03"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g04"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Test"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g05"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Test"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g06"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g07"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Test"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g08"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Test"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g09"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Test"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g010"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Test"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g011"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Test"
+                    android:layout_height="wrap_content" />
                 <CheckBox
                     android:layout_width="match_parent"
                     android:id="@+id/g012"
@@ -124,111 +136,114 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g013"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g014"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g015"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g016"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g017"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g018"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g019"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g020"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g021"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g022"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
-            <CheckBox
-                android:layout_width="match_parent"
-                android:id="@+id/g023"
-                android:text="Test"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g013"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g014"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g015"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g016"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g017"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g018"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g019"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g020"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g021"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g022"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:id="@+id/g023"
+                    android:text="Test"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"/>
             </LinearLayout>
 
         </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+
 
 
 

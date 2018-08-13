@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +16,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -62,12 +65,12 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.g021) CheckBox g21;
     @BindView(R.id.g022) CheckBox g22;
     @BindView(R.id.g023) CheckBox g23;
-
     Database database;
     Diagnosa modeldiagnosa;
     String penyakit1,penyakit2,penyakit3,penyakit4,penyakit5 = "";
     String persen1,persen2,persen3,persen4,persen5 ="";
     String code1,code2,code3,code4,code5="";
+    Intent intents;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         database= new Database(this);
         modeldiagnosa=new Diagnosa();
+        intents = getIntent();
         inisialisasiView();
     }
 
@@ -156,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                         && !g17.isChecked() && !g18.isChecked() && !g19.isChecked() &&
                         !g20.isChecked() && !g21.isChecked() && !g22.isChecked() && !g23.isChecked()){
                     Toast.makeText(getApplicationContext(),"Pilih gejala",Toast.LENGTH_SHORT).show();
-                }else{
+                } else{
                     caculationDiagnosa();
                 }
             }
@@ -362,6 +366,9 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("code5",code5);
         }
 
+        intent.putExtra("nama",intents.getStringExtra("nama"));
+        intent.putExtra("umur",intents.getStringExtra("umur"));
+        intent.putExtra("jk",intents.getStringExtra("jk"));
         startActivity(intent);
 
     }
