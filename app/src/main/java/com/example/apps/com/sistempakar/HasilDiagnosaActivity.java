@@ -2,6 +2,7 @@ package com.example.apps.com.sistempakar;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -49,8 +50,8 @@ public class HasilDiagnosaActivity extends AppCompatActivity {
     @BindView(R.id.nama) TextView nama;
     @BindView(R.id.jk) TextView jk;
     @BindView(R.id.umur) TextView umur;
-    @BindView(R.id.exit) ImageButton exit;
-    @BindView(R.id.btnBack) Button btnPeriksaUlang;
+    @BindView(R.id.exit) FloatingActionButton exit;
+    @BindView(R.id.btnBack) FloatingActionButton btnPeriksaUlang;
 
     Intent intent;
     @Override

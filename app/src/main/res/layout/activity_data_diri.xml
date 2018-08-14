@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,102 +7,108 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".DataDiriActivity">
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/toolbar"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:padding="10dp"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar"/>
         <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/icon_data_diri"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:text="Data Diri"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:gravity="center_vertical"
-                android:layout_gravity="center_vertical"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="5dp"
-                android:textColor="#000"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            app:hintEnabled="true"
-            android:layout_height="wrap_content">
-            <EditText
-                android:layout_width="match_parent"
-                android:hint="Nama"
-                android:typeface="normal"
-                android:inputType="text"
-                android:id="@+id/nama"
-                android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            app:hintEnabled="true"
-            android:layout_height="wrap_content">
-            <EditText
-                android:layout_width="match_parent"
-                android:hint="Umur"
-                android:typeface="normal"
-                android:inputType="number"
-                android:id="@+id/umur"
-                android:layout_height="wrap_content" />
-        </android.support.design.widget.TextInputLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/icon_gender"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:text="Jenis Kelamin"
-                android:gravity="center_vertical"
-                android:textSize="16sp"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <RadioGroup
             android:layout_width="match_parent"
             android:orientation="vertical"
+            android:padding="10dp"
             android:layout_height="wrap_content">
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:id="@+id/lakilaki"
-                android:text="Laki-laki"
-                android:layout_height="wrap_content" />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:id="@+id/perempuan"
-                android:text="Perempuan"
-                android:layout_height="wrap_content" />
-        </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_data_diri"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Data Diri"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                app:hintEnabled="true"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Nama"
+                    android:typeface="normal"
+                    android:inputType="text"
+                    android:id="@+id/nama"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                app:hintEnabled="true"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Umur"
+                    android:typeface="normal"
+                    android:inputType="number"
+                    android:id="@+id/umur"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_gender"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Jenis Kelamin"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/lakilaki"
+                    android:text="Laki-laki"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/perempuan"
+                    android:text="Perempuan"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
     </LinearLayout>
-    <ImageButton
-        android:layout_width="100dp"
-        android:layout_margin="10dp"
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="65dp"
+        android:layout_margin="20dp"
         android:id="@+id/next"
+        android:layout_gravity="bottom|end"
         android:padding="10dp"
-        android:background="@color/colorPrimaryDark"
         android:textColor="#fff"
+        app:fabSize="normal"
         android:scaleType="fitCenter"
-        android:src="@drawable/icont_nexti"
-        android:text="Lanjutkan"
-        android:layout_height="50dp" />
-</LinearLayout>
+        android:src="@drawable/ic_action_save"
+        android:layout_height="65dp" />
+</android.support.design.widget.CoordinatorLayout>

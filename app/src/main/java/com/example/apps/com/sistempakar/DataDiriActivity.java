@@ -1,6 +1,7 @@
 package com.example.apps.com.sistempakar;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -19,7 +20,7 @@ public class DataDiriActivity extends AppCompatActivity {
     @BindView(R.id.umur) EditText umur;
     @BindView(R.id.lakilaki) RadioButton male;
     @BindView(R.id.perempuan) RadioButton female;
-    @BindView(R.id.next) ImageButton btnNext;
+    @BindView(R.id.next) FloatingActionButton btnNext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

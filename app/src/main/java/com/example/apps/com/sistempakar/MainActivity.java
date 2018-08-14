@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -42,7 +43,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.submit) ImageButton submit;
+    @BindView(R.id.submit) FloatingActionButton submit;
     @BindView(R.id.g01) CheckBox g01;
     @BindView(R.id.g02) CheckBox g02;
     @BindView(R.id.g03) CheckBox g03;
