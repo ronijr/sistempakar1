@@ -2,9 +2,12 @@ package com.example.apps.com.sistempakar;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -47,6 +50,8 @@ public class HasilDiagnosaActivity extends AppCompatActivity {
     @BindView(R.id.nama) TextView nama;
     @BindView(R.id.jk) TextView jk;
     @BindView(R.id.umur) TextView umur;
+    @BindView(R.id.exit) FloatingActionButton exit;
+    @BindView(R.id.btnBack) FloatingActionButton btnPeriksaUlang;
 
     Intent intent;
     @Override
@@ -64,6 +69,19 @@ public class HasilDiagnosaActivity extends AppCompatActivity {
         nama.setText(intent.getStringExtra("nama"));
         jk.setText(intent.getStringExtra("jk"));
         umur.setText(intent.getStringExtra("umur")+" Tahun");
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                finishAffinity();
+            }
+        });
+        btnPeriksaUlang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         if(intent.getStringExtra("code1") != null){
             layout1.setVisibility(View.VISIBLE);
